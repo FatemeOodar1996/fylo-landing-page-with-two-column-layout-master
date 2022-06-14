@@ -1,0 +1,294 @@
+:root {
+  // ### Primar
+  --Very_Dark_Blue: hsl(243, 87%, 12%);
+  --Desaturated_Blue: hsl(238, 22%, 44%);
+
+  // ### Accent
+  --Bright_Blue: hsl(224, 93%, 58%);
+  --Moderate_Cyan: hsl(170, 45%, 43%);
+
+  // ### Neutral
+  --Light_Grayish_Blue: hsl(240, 75%, 98%);
+  --Light_Gray: hsl(0, 0%, 75%);
+  --White: hsl(0, 0%, 100%);
+
+  font-family: "Alata", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "League Spartan", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Overpass", sans-serif;
+}
+
+.navbar {
+  padding-top: 2rem;
+  .navbar-collapse {
+    flex-grow: unset;
+    .navbar-nav {
+      gap: 2rem;
+      .nav-link {
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+        color: var(--Very_Dark_Blue);
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: var(--Desaturated_Blue);
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  .container {
+    align-items: center;
+  }
+  margin: 5rem 0;
+  .form {
+    justify-content: center;
+    &-title {
+      font-size: clamp(0.5rem, calc(0.5rem + 1.5rem), 3rem);
+      color: var(--Very_Dark_Blue) !important;
+      font-family: "Nunito", sans-serif;
+      font-weight: bolder;
+    }
+    &-description {
+      font-size: 1.25rem;
+      color: var(--Very_Dark_Blue);
+      font-weight: 400;
+    }
+    &-login {
+      font-family: "Nunito", sans-serif;
+      font-size: 1rem;
+      .email {
+        border: 1px solid var(--Very_Dark_Blue);
+        // width: max(100%, 320px);
+        margin-right: 1rem;
+        padding: 0.5rem 2rem;
+        border-radius: 5px;
+        ::placeholder {
+          color: var(--Moderate_Cyan);
+        }
+      }
+      button {
+        padding: 0.5rem 3rem;
+        background-color: var(--Bright_Blue);
+        color: var(--White);
+        border: none;
+        margin-right: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+  .image {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.about-us {
+  .container {
+    align-items: center;
+  }
+  .body {
+    background-color: var(--Light_Grayish_Blue);
+    padding-bottom: 4rem;
+  }
+  .bg-desktop {
+    width: 100%;
+  }
+  .information {
+    font-family: "Nunito", sans-serif;
+    padding: 20px 0;
+    &-title {
+      font-size: clamp(0.5rem, calc(0.5rem + 1.5rem), 3rem);
+      color: var(--Very_Dark_Blue) !important;
+      font-weight: bolder;
+    }
+    &-description {
+      padding-right: 3rem;
+      font-size: 1rem;
+      color: var(--Very_Dark_Blue);
+      font-weight: 400;
+    }
+    a {
+      color: var(--Moderate_Cyan);
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      cursor: pointer;
+      &:hover {
+        color: var(--Bright_Blue);
+      }
+    }
+    &-card {
+      .card {
+        padding: 1rem;
+        .card-text {
+          font-size: 0.75rem;
+        }
+        .avatar {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          margin-right: 1rem;
+        }
+        .name {
+          font-size: 1rem;
+          font-weight: bold;
+          margin-bottom: 0;
+        }
+        .position {
+          font-size: 0.5rem;
+          font-weight: lighter;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .image {
+    img {
+      width: 100%;
+    }
+  }
+}
+.contact-us {
+  padding: 4rem 0;
+  background-color: var(--Desaturated_Blue);
+  .description {
+    &-title {
+      font-size: clamp(0.5rem, calc(0.5rem + 1.25rem), 3rem);
+      color: var(--White);
+      font-family: "Nunito", sans-serif;
+      font-weight: bolder;
+    }
+    &-text {
+      font-size: 1rem;
+      color: var(--White);
+      font-weight: 400;
+    }
+  }
+  .submit {
+    padding-left: 4rem;
+    .email {
+      font-family: "Nunito", sans-serif;
+      font-size: 1rem;
+      border: 1px solid var(--Very_Dark_Blue);
+      margin-right: 1rem;
+      padding: 0.5rem 2rem;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      ::placeholder {
+        color: var(--Moderate_Cyan);
+      }
+    }
+    button {
+      width: 238px;
+      padding: 0.5rem 3rem;
+      background-color: var(--Bright_Blue);
+      color: var(--White);
+      border: none;
+      margin-right: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+footer {
+  font-family: "Nunito", sans-serif;
+  padding: 4rem 0;
+  background-color: var(--Very_Dark_Blue);
+  .phone {
+    width: 15px;
+    height: 15px;
+    margin-right: 1rem;
+  }
+  .email {
+    width: 17px;
+    height: 15px;
+    margin-right: 1rem;
+  }
+  p {
+    font-size: 1rem;
+    color: var(--White);
+    font-weight: 400;
+  }
+  ul {
+    padding-left: 0;
+  }
+  li {
+    color: var(--White);
+    list-style-type: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    margin-bottom: 1rem;
+    &:hover {
+      color: var(--Bright_Blue);
+    }
+  }
+  .social {
+    display: flex;
+    gap: 2rem;
+    .icon {
+      border: 1px solid var(--White);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    .form {
+      &-login {
+        .email {
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
+        button {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-us {
+    .information {
+      padding: 20px 0;
+      &-title {
+        font-size: 1rem;
+      }
+      &-description {
+        padding-right: 0rem;
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        inset: 0;
+      }
+    }
+  }
+  .contact-us {
+    .submit {
+      padding-left: 0rem;
+
+      .email {
+        margin-right: 0;
+      }
+      button {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+}
