@@ -119,6 +119,9 @@
 .about-us .information a:hover {
   color: var(--Bright_Blue);
 }
+.about-us .information-card {
+  margin-top: 1rem;
+}
 .about-us .information-card .card {
   padding: 1rem;
 }
@@ -276,5 +279,11 @@ footer .social .icon img {
   .contact-us .submit button {
     width: 100%;
     margin-right: 0;
+  }
+
+  .information-card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 18rem;
   }
 }/*# sourceMappingURL=style.css.map */
